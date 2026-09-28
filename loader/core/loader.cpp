@@ -448,6 +448,33 @@ std::set<std::wstring> FindLegacy(const std::wstring& proxyPath)
     return found;
 }
 
+// 旧版のフォルダ（Mods\<名前>\）だけが残っている場合。旧 Native 120FPS Option の
+// dinput8.dll はローダーの導入で上書きされるので、1.x のまま共通ローダーだけを入れると、
+// その Mod は何のメッセージも無く動かなくなる。気づけるようにログに残す。
+void FindLeftovers(const std::set<std::wstring>& legacy)
+{
+    for (const auto& l : kLegacy)
+    {
+        if (legacy.count(l.plugin)) continue;   // DLL が残っている方は FindLegacy で報告済み
+        const std::wstring oldDir = g_gameDir + L"Mods\\" + l.plugin;
+        const DWORD attr = GetFileAttributesW(oldDir.c_str());
+        if (attr == INVALID_FILE_ATTRIBUTES || !(attr & FILE_ATTRIBUTE_DIRECTORY)) continue;
+
+        const std::string name = Utf8(l.plugin);
+        const std::wstring newDll =
+            g_rootDir + L"Mods\\" + l.plugin + L"\\" + l.plugin + L".dll";
+        if (mixednuts::file::Exists(newDll))
+            Log("[--] The old folder Mods\\%s (version 1.x) is no longer used and can be deleted.",
+                name.c_str());
+        else
+            Log("[!!] Files of %s 1.x were found in Mods\\%s, but its DLL is gone (it may have been"
+                " overwritten when the loader was installed), so %s is NOT running. Install %s"
+                " 2.0.0 or later into MixedNuts\\Mods\\%s\\ and delete Mods\\%s.",
+                name.c_str(), name.c_str(), name.c_str(), name.c_str(), name.c_str(),
+                name.c_str());
+    }
+}
+
 // ---- プラグインの読み込み -----------------------------------------------
 
 std::vector<std::wstring> ListPluginDirs()
@@ -559,6 +586,7 @@ void Start(const wchar_t* proxyPath, const wchar_t* forwardTo)
         forwardTo ? Utf8(forwardTo).c_str() : "- : unsupported file name");
 
     const std::set<std::wstring> legacy = FindLegacy(proxyPath ? proxyPath : L"");
+    FindLeftovers(legacy);
     LoadPlugins(legacy);
 
     if (g_patches.empty())

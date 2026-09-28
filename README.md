@@ -65,6 +65,15 @@ DLL is still there, the loader does not load that mod and writes a message to
 `MixedNuts\loader.log` asking you to delete it (so that the old and the new version are
 never applied together).
 
+ローダーだけを入れて Mod を 1.x のままにすると、その Mod は動きません（特に Native 120FPS
+Option 1.x は、`dinput8.dll` がローダーで上書きされて止まります）。旧版のフォルダが残って
+いて新版が無い場合も、`loader.log` に 2.0.0 への更新を促すメッセージを書きます。
+
+Installing only the loader and keeping a mod at 1.x leaves that mod not running (Native
+120FPS Option 1.x in particular stops, because the loader's `dinput8.dll` overwrites its
+own). When an old folder is still there but the new version is not, `loader.log` says so
+and asks you to update to 2.0.0.
+
 ### 他の Mod と `dinput8.dll` がぶつかるとき / If another mod also uses `dinput8.dll`
 
 **上書きしないでください。** こちらの `dinput8.dll` の名前を `version.dll` か
