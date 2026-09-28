@@ -1,4 +1,4 @@
-# MixedNuts Mod Loader
+# MixedNutsModLoader
 
 **FATAL FRAME II: Crimson Butterfly REMAKE**（零 〜紅い蝶〜 REMAKE / Steam AppID 3920610）用の、
 MixedNuts の Mod に共通のローダーです。
@@ -8,8 +8,8 @@ Crimson Butterfly REMAKE (Steam, AppID 3920610).
 次の Mod は、このローダーの上で動きます（それぞれ 2.0.0 以降）。
 The following mods run on this loader (each from 2.0.0 on):
 
-- [Native 120FPS Option](https://github.com/MixedNuts-Dev/fatal-frame2-remake-native-120fps)
-- [Mouse Wheel Camera Speed](https://github.com/MixedNuts-Dev/fatal-frame2-remake-mouse-wheel-camera-speed)
+- [Native120FPSOption](https://github.com/MixedNuts-Dev/fatal-frame2-remake-native-120fps)
+- [MouseWheelCameraSpeed](https://github.com/MixedNuts-Dev/fatal-frame2-remake-mouse-wheel-camera-speed)
 - [TwinSwap](https://github.com/MixedNuts-Dev/fatal-frame2-remake-twin-swap)
 
 以前はそれぞれが別の名前の DLL（`dinput8.dll` / `version.dll` / `xinput1_4.dll`）で単独に
@@ -53,8 +53,8 @@ If you have the 1.x versions installed, **delete the following** from the game's
 
 | 旧版 / Old version | 削除するもの / Delete |
 |---|---|
-| Native 120FPS Option 1.x | `dinput8.dll`、`Mods\native120fps\` |
-| Mouse Wheel Camera Speed 1.x | `version.dll`、`Mods\wheelspeed\` |
+| Native120FPSOption 1.x | `dinput8.dll`、`Mods\native120fps\` |
+| MouseWheelCameraSpeed 1.x | `version.dll`、`Mods\wheelspeed\` |
 | TwinSwap 1.x | `xinput1_4.dll`、`Mods\twinswap\` |
 
 `Mods` フォルダに他の Mod が入っている場合は、上の 3 つのフォルダだけを消してください。

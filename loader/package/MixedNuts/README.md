@@ -1,4 +1,4 @@
-# MixedNuts Mod Loader
+# MixedNutsModLoader
 
 **FATAL FRAME II: Crimson Butterfly REMAKE** 用の、MixedNuts の Mod に共通のローダーです。
 The common mod loader for the MixedNuts mods for FATAL FRAME / PROJECT ZERO II:
@@ -12,7 +12,7 @@ Created by MixedNuts
 
 ## これは何か
 
-MixedNuts の Mod（Native 120FPS Option / Mouse Wheel Camera Speed / TwinSwap の
+MixedNuts の Mod（Native120FPSOption / MouseWheelCameraSpeed / TwinSwap の
 2.0.0 以降）を動かすためのローダーです。**これだけ入れても、ゲームは何も変わりません。**
 Mod は `MixedNuts\Mods\` の中に入れます。
 
@@ -60,8 +60,8 @@ Mod は `MixedNuts\Mods\` の中に入れます。
 
 | 旧版 | 削除するもの |
 |---|---|
-| Native 120FPS Option 1.x | `dinput8.dll`、`Mods\native120fps\` |
-| Mouse Wheel Camera Speed 1.x | `version.dll`、`Mods\wheelspeed\` |
+| Native120FPSOption 1.x | `dinput8.dll`、`Mods\native120fps\` |
+| MouseWheelCameraSpeed 1.x | `version.dll`、`Mods\wheelspeed\` |
 | TwinSwap 1.x | `xinput1_4.dll`、`Mods\twinswap\` |
 
 `Mods` フォルダに他の Mod が入っている場合は、上の 3 つのフォルダだけを消してください。
@@ -69,7 +69,7 @@ Mod は `MixedNuts\Mods\` の中に入れます。
 促すメッセージを書きます（旧版と新版が二重に掛からないようにするため）。
 
 **Mod も 2.0.0 に更新してください。** ローダーだけを入れて Mod を 1.x のままにすると、
-その Mod は動きません（特に Native 120FPS Option 1.x は、`dinput8.dll` がローダーで
+その Mod は動きません（特に Native120FPSOption 1.x は、`dinput8.dll` がローダーで
 上書きされて止まります）。この場合も `loader.log` に更新を促すメッセージを書きます。
 
 ### 他の Mod と `dinput8.dll` がぶつかるとき
@@ -145,7 +145,7 @@ https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader/issues
 
 ## What this does
 
-This is the loader the MixedNuts mods (Native 120FPS Option / Mouse Wheel Camera Speed /
+This is the loader the MixedNuts mods (Native120FPSOption / MouseWheelCameraSpeed /
 TwinSwap, 2.0.0 and later) run on. **On its own it changes nothing in the game.**
 Mods go inside `MixedNuts\Mods\`.
 
@@ -193,8 +193,8 @@ first.
 
 | Old version | Delete |
 |---|---|
-| Native 120FPS Option 1.x | `dinput8.dll`, `Mods\native120fps\` |
-| Mouse Wheel Camera Speed 1.x | `version.dll`, `Mods\wheelspeed\` |
+| Native120FPSOption 1.x | `dinput8.dll`, `Mods\native120fps\` |
+| MouseWheelCameraSpeed 1.x | `version.dll`, `Mods\wheelspeed\` |
 | TwinSwap 1.x | `xinput1_4.dll`, `Mods\twinswap\` |
 
 If the `Mods` folder holds other mods, delete only the three folders above. While an old
@@ -203,7 +203,7 @@ DLL is still there, the loader does not load that mod and writes a message to
 applied together).
 
 **Update the mods to 2.0.0 as well.** Installing only the loader and keeping a mod at 1.x
-leaves that mod not running (Native 120FPS Option 1.x in particular stops, because the
+leaves that mod not running (Native120FPSOption 1.x in particular stops, because the
 loader's `dinput8.dll` overwrites its own). `loader.log` asks you to update in that case
 too.
 
