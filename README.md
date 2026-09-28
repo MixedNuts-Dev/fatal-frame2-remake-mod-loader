@@ -22,11 +22,12 @@ and **several mods can modify the same file (such as `root.rdb`) one after anoth
 
 ## 導入 / Installation
 
-**ビルドは不要です。** [Releases](../../releases) から配布物をダウンロードし、中身の
+**ビルドは不要です。** [Releases](../../releases) か [Nexus Mods](https://www.nexusmods.com/fatalframe2crimsonbutterflyremake/mods/26) から配布物をダウンロードし、中身の
 `dinput8.dll` と `MixedNuts` フォルダを、ゲームのルート（`FatalFrameII.exe` と同じ場所）に
 コピーします。Mod はその後、`MixedNuts\Mods\` の中に入れます。
 
-**No build required.** Download the archive from [Releases](../../releases) and copy
+**No build required.** Download the archive from [Releases](../../releases) or
+[Nexus Mods](https://www.nexusmods.com/fatalframe2crimsonbutterflyremake/mods/26) and copy
 `dinput8.dll` and the `MixedNuts` folder into the game's root directory (the folder
 containing `FatalFrameII.exe`). Mods then go inside `MixedNuts\Mods\`.
 
