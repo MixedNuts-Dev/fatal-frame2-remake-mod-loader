@@ -25,6 +25,7 @@ if errorlevel 1 exit /b 1
 
 echo === copying package files ===
 copy /y "%ROOT%package\MixedNuts\loader.ini" "%OUT%\MixedNuts\" >nul
+copy /y "%ROOT%package\MixedNuts\README.md" "%OUT%\MixedNuts\" >nul
 copy /y "%REPO%\LICENSE" "%OUT%\MixedNuts\LICENSE.txt" >nul
 
 rem import library / export file are build by-products
