@@ -1,5 +1,5 @@
 // FATAL FRAME II: Crimson Butterfly REMAKE — MixedNuts Mod 共通コード
-// Created by MixedNuts - https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader
+// Created by MixedNuts - https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader
 // Licensed under the MIT License. See LICENSE for details.
 //
 // パスの解決と比較。フォルダはどれも末尾に \ を付けて返す。

@@ -137,7 +137,7 @@ Mod は `MixedNuts\Mods\` の中に入れます。
 不具合を報告するときは、GitHub の Issue で `loader.log` と該当する Mod のログを
 添付してください。
 
-https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader/issues
+https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader/issues
 
 ---
 
@@ -272,7 +272,7 @@ Lines starting with `[NG]` or `[!!]` explain what went wrong.
 When reporting a problem, please open a GitHub Issue and attach `loader.log` and the log
 of the mod concerned.
 
-https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader/issues
+https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader/issues
 
 ---
 
@@ -286,4 +286,4 @@ MIT License — Copyright (c) 2026 MixedNuts
 This software is provided under the MIT License. You are free to redistribute and
 modify it, but the copyright notice and the license text must be retained.
 
-https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader
+https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader

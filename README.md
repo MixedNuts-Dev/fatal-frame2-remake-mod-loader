@@ -8,9 +8,9 @@ Crimson Butterfly REMAKE (Steam, AppID 3920610).
 次の Mod は、このローダーの上で動きます（それぞれ 2.0.0 以降）。
 The following mods run on this loader (each from 2.0.0 on):
 
-- [Native120FPSOption](https://github.com/MixedNuts-Dev/fatal-frame2-remake-native-120fps)
-- [MouseWheelCameraSpeed](https://github.com/MixedNuts-Dev/fatal-frame2-remake-mouse-wheel-camera-speed)
-- [TwinSwap](https://github.com/MixedNuts-Dev/fatal-frame2-remake-twin-swap)
+- [Native120FPSOption](https://github.com/MixedNutsJP/fatal-frame2-remake-native-120fps)
+- [MouseWheelCameraSpeed](https://github.com/MixedNutsJP/fatal-frame2-remake-mouse-wheel-camera-speed)
+- [TwinSwap](https://github.com/MixedNutsJP/fatal-frame2-remake-twin-swap)
 
 以前はそれぞれが別の名前の DLL（`dinput8.dll` / `version.dll` / `xinput1_4.dll`）で単独に
 動いていました。ローダーにまとめたことで、ゲームのフォルダに置く DLL は 1 つになり、
@@ -186,7 +186,7 @@ Mod のリポジトリにはこのリポジトリを submodule で取り込み�
 Mods add this repository as a submodule and put `common` and `api` on the include path.
 
 ```
-git submodule add https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader.git mod-loader
+git submodule add https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader.git mod-loader
 cl ... /I mod-loader\common /I mod-loader\api ...
 ```
 

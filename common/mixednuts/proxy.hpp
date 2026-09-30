@@ -1,5 +1,5 @@
 // FATAL FRAME II: Crimson Butterfly REMAKE — MixedNuts Mod 共通コード
-// Created by MixedNuts - https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader
+// Created by MixedNuts - https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader
 // Licensed under the MIT License. See LICENSE for details.
 //
 // プロキシ DLL の転送。ゲームのルートに System32 の DLL と同じ名前で置き、

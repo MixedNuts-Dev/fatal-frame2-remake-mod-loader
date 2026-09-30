@@ -1,6 +1,6 @@
 // FATAL FRAME II: Crimson Butterfly REMAKE — MixedNuts Mod Loader
 // プロキシ（dinput8.dll / version.dll / xinput1_4.dll のどの名前でも動く）
-// Created by MixedNuts - https://github.com/MixedNuts-Dev/fatal-frame2-remake-mod-loader
+// Created by MixedNuts - https://github.com/MixedNutsJP/fatal-frame2-remake-mod-loader
 // Licensed under the MIT License. See LICENSE for details.
 //
 // ゲームのルートに置くと自動的にロードされ、MixedNuts\MixedNutsLoader.dll を読み込む。
